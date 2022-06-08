@@ -14,6 +14,8 @@
 		4E90339F28511E9000906C18 /* UndecidedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90339E28511E9000906C18 /* UndecidedTests.swift */; };
 		4E9033A928511E9000906C18 /* UndecidedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9033A828511E9000906C18 /* UndecidedUITests.swift */; };
 		4E9033AB28511E9000906C18 /* UndecidedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9033AA28511E9000906C18 /* UndecidedUITestsLaunchTests.swift */; };
+		4E9033B828511EE400906C18 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4E9033B728511EE400906C18 /* .gitignore */; };
+		4E9033BA28511F1400906C18 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 4E9033B928511F1400906C18 /* .gitattributes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		4E9033A428511E9000906C18 /* UndecidedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UndecidedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9033A828511E9000906C18 /* UndecidedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndecidedUITests.swift; sourceTree = "<group>"; };
 		4E9033AA28511E9000906C18 /* UndecidedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndecidedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4E9033B728511EE400906C18 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		4E9033B928511F1400906C18 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 		4E90338128511E8F00906C18 = {
 			isa = PBXGroup;
 			children = (
+				4E9033B928511F1400906C18 /* .gitattributes */,
+				4E9033B728511EE400906C18 /* .gitignore */,
 				4E90338C28511E8F00906C18 /* Undecided */,
 				4E90339D28511E9000906C18 /* UndecidedTests */,
 				4E9033A728511E9000906C18 /* UndecidedUITests */,
@@ -232,7 +238,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E90339528511E8F00906C18 /* Preview Assets.xcassets in Resources */,
+				4E9033B828511EE400906C18 /* .gitignore in Resources */,
 				4E90339228511E8F00906C18 /* Assets.xcassets in Resources */,
+				4E9033BA28511F1400906C18 /* .gitattributes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
