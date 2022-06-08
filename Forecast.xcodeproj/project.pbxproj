@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E2BE7CD2851261600D446A4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4E2BE7CC2851261600D446A4 /* .gitignore */; };
+		4E2BE7CF2851264200D446A4 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 4E2BE7CE2851264200D446A4 /* .gitattributes */; };
 		4E9033C82851219100906C18 /* ForecastApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9033C72851219100906C18 /* ForecastApp.swift */; };
 		4E9033CA2851219100906C18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9033C92851219100906C18 /* ContentView.swift */; };
 		4E9033CC2851219200906C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E9033CB2851219200906C18 /* Assets.xcassets */; };
@@ -14,8 +16,6 @@
 		4E9033D92851219200906C18 /* ForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9033D82851219200906C18 /* ForecastTests.swift */; };
 		4E9033E32851219200906C18 /* ForecastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9033E22851219200906C18 /* ForecastUITests.swift */; };
 		4E9033E52851219200906C18 /* ForecastUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9033E42851219200906C18 /* ForecastUITestsLaunchTests.swift */; };
-		4E9033F2285121B300906C18 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4E9033F1285121B300906C18 /* .gitignore */; };
-		4E9033F4285121E300906C18 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 4E9033F3285121E300906C18 /* .gitattributes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E2BE7CC2851261600D446A4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		4E2BE7CE2851264200D446A4 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		4E9033C42851219100906C18 /* Forecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9033C72851219100906C18 /* ForecastApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastApp.swift; sourceTree = "<group>"; };
 		4E9033C92851219100906C18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,8 +48,6 @@
 		4E9033DE2851219200906C18 /* ForecastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForecastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9033E22851219200906C18 /* ForecastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastUITests.swift; sourceTree = "<group>"; };
 		4E9033E42851219200906C18 /* ForecastUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		4E9033F1285121B300906C18 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		4E9033F3285121E300906C18 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +78,8 @@
 		4E9033BB2851219100906C18 = {
 			isa = PBXGroup;
 			children = (
-				4E9033F3285121E300906C18 /* .gitattributes */,
-				4E9033F1285121B300906C18 /* .gitignore */,
+				4E2BE7CE2851264200D446A4 /* .gitattributes */,
+				4E2BE7CC2851261600D446A4 /* .gitignore */,
 				4E9033C62851219100906C18 /* Forecast */,
 				4E9033D72851219200906C18 /* ForecastTests */,
 				4E9033E12851219200906C18 /* ForecastUITests */,
@@ -238,9 +238,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E9033CF2851219200906C18 /* Preview Assets.xcassets in Resources */,
-				4E9033F2285121B300906C18 /* .gitignore in Resources */,
+				4E2BE7CD2851261600D446A4 /* .gitignore in Resources */,
 				4E9033CC2851219200906C18 /* Assets.xcassets in Resources */,
-				4E9033F4285121E300906C18 /* .gitattributes in Resources */,
+				4E2BE7CF2851264200D446A4 /* .gitattributes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
