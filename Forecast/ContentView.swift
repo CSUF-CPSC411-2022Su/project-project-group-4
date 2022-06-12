@@ -6,11 +6,17 @@
 //
 
 import SwiftUI
+import CoreLocationUI
 
 struct ContentView: View {
+    var locationManager = LocationManager()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            LocationButton(.shareCurrentLocation){
+                locationManager.requesstLocation()
+            }
+        }
     }
 }
 
