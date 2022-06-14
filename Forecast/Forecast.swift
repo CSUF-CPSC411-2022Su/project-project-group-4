@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+class NecessaryFeatures{
+    var WindSpeed: Int
+    var Humidity: Int
+    var UvIndex: String
+    
+    init(){
+        self.WindSpeed = 100
+        self.Humidity = 94
+        self.UvIndex = "Low"
+    }
+}
