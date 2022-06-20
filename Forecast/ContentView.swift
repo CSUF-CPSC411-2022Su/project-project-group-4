@@ -6,16 +6,12 @@
 //
 
 import SwiftUI
-import CoreLocationUI
 
 struct ContentView: View {
-    var locationManager = LocationManager()
     
     var body: some View {
         VStack{
-            LocationButton(.shareCurrentLocation){
-                locationManager.requesstLocation()
-            }
+            DefaultWeatherView()
         }
     }
 }
