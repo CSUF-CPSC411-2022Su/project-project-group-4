@@ -8,15 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    var x = NecessaryFeatures()
     var body: some View {
-        
-        Text("Welcome to our app Forecast!!!")
-            .padding()
-        Text("Wind Speed = \(x.WindSpeed)mph 🌪")
-        Text("Humidity = \(x.Humidity)% 🌧")
-        Text("Uv Index = \(x.UvIndex) ☀️")
-    }
+    feature3View()
+
+}
 }
 
 struct ContentView_Previews: PreviewProvider {
