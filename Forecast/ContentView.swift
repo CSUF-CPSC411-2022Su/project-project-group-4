@@ -9,8 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .center, spacing: 16) {
-            Spacer()
+        VStack(alignment: .center, spacing: 5) {
             Text("Fullerton")
                 .font(.largeTitle)
                 .foregroundColor(Color.blue)
@@ -29,13 +28,21 @@ struct ContentView: View {
                 .multilineTextAlignment(.center)
             Text("H:88º  L:50º")
                 .foregroundColor(Color.orange)
-            Spacer()
-            
-            
-            
+        NavigationView{
+            List{
+                ForEach(weekly, id: \.self){ week in
+                    NavigationLink(destination: WeeklyView()){
+                        Text(week)
+                    }
+                        .navigationTitle("Daily Forecast")
+                    }
+            }
         }
+        }
+        
     }
 }
+            
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

@@ -16,6 +16,8 @@
 		4E9033D92851219200906C18 /* ForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9033D82851219200906C18 /* ForecastTests.swift */; };
 		4E9033E32851219200906C18 /* ForecastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9033E22851219200906C18 /* ForecastUITests.swift */; };
 		4E9033E52851219200906C18 /* ForecastUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9033E42851219200906C18 /* ForecastUITestsLaunchTests.swift */; };
+		7A97BB2D28615A3E005383E6 /* weekly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97BB2C28615A3E005383E6 /* weekly.swift */; };
+		7A97BB2F28615B4D005383E6 /* WeeklyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97BB2E28615B4D005383E6 /* WeeklyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		4E9033DE2851219200906C18 /* ForecastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForecastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9033E22851219200906C18 /* ForecastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastUITests.swift; sourceTree = "<group>"; };
 		4E9033E42851219200906C18 /* ForecastUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7A97BB2C28615A3E005383E6 /* weekly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weekly.swift; sourceTree = "<group>"; };
+		7A97BB2E28615B4D005383E6 /* WeeklyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 			children = (
 				4E9033C72851219100906C18 /* ForecastApp.swift */,
 				4E9033C92851219100906C18 /* ContentView.swift */,
+				7A97BB2E28615B4D005383E6 /* WeeklyView.swift */,
+				7A97BB2C28615A3E005383E6 /* weekly.swift */,
 				4E9033CB2851219200906C18 /* Assets.xcassets */,
 				4E9033CD2851219200906C18 /* Preview Content */,
 			);
@@ -265,8 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A97BB2D28615A3E005383E6 /* weekly.swift in Sources */,
 				4E9033CA2851219100906C18 /* ContentView.swift in Sources */,
 				4E9033C82851219100906C18 /* ForecastApp.swift in Sources */,
+				7A97BB2F28615B4D005383E6 /* WeeklyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
