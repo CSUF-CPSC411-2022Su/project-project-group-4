@@ -8,13 +8,21 @@
 import CoreLocationUI
 import SwiftUI
 
-struct DefaultWeatherView: View {
+struct welcomeView: View {
     @StateObject var locationManager = LocationManager()
     var weatherManager = WeatherManager()
     @State var weather: ResponseBody?
 
     var body: some View {
         VStack {
+            backgroundGradient
+                .ignoresSafeArea()
+
+            Image("weatherPic")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 300)
+
             VStack {
                 Text("Welcome to ForeCast").bold().font(.title)
                 Text("Please share your current location").padding()
@@ -22,18 +30,18 @@ struct DefaultWeatherView: View {
                     locationManager.requesstLocation()
                 }
                 .foregroundColor(.white)
-                if let location = locationManager.location {
-                    Text("Your Coordinate are:\(location.longitude),\(location.latitude)")
-                
-                }
-                    
             }
+            .padding()
+        }
+    }
+
+    struct welcomeView_Previews: PreviewProvider {
+        static var previews: some View {
+            welcomeView()
         }
     }
 }
 
-struct DefaultWeatherView_Previews: PreviewProvider {
-    static var previews: some View {
-        DefaultWeatherView()
-    }
-}
+let backgroundGradient = LinearGradient(
+    colors: [Color.blue, Color.white],
+    startPoint: .top, endPoint: .bottom)

@@ -8,10 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     var body: some View {
-        VStack{
-            DefaultWeatherView()
+        VStack {
+            TabView {
+                welcomeView()
+                    .tabItem {
+                        Image(systemName: "location")
+                        Text("Welcome")
+                            .bold()
+                    }
+
+                weatherView()
+                    .tabItem {
+                        Image(systemName: "location")
+                        Text("Weather")
+                            .bold()
+                    }
+            }
         }
     }
 }
