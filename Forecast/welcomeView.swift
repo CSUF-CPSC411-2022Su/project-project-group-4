@@ -8,6 +8,7 @@
 import CoreLocationUI
 import SwiftUI
 
+//Welcome page
 struct welcomeView: View {
     @StateObject var locationManager = LocationManager()
     var weatherManager = WeatherManager()

@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-// I couldn't get the API to work properly
+// I couldn't get the API to work properly.
 struct weatherView: View {
     var body: some View {
         ZStack {

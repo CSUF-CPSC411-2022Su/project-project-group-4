@@ -7,7 +7,7 @@
 
 import Foundation
 import CoreLocation
-
+//Weather API, not working 
 class WeatherManager{
     func getCurrentWeather(latitude: CLLocationDegrees, longitude: CLLocationDegrees) async throws-> ResponseBody{
         guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\("95c44a170db2ad283574cc8cb7d204f6")&units=metric")
