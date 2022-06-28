@@ -6,12 +6,24 @@
 //
 
 import Foundation
-let weekly = [
-    "Sunday",
- "Monday",
- "Tuesday",
- "wednesday",
- "Thursday",
- "Friday",
- "Saturday"
-]
+struct DailyForecast: Codable, Identifiable {
+    
+    var id: Date {
+        return time
+    }
+    
+    var time: Date
+    var maxTemperature: Double
+    var minTemperature: Double
+    var icon: Forecast.Icon
+    
+    enum CodingKeys: String, CodingKey {
+        
+        case time = "time"
+        case maxTemperature = "temperatureHigh"
+        case minTemperature = "temperatureLow"
+        case icon = "icon"
+        
+    }
+    
+}
