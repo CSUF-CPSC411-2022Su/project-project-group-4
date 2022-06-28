@@ -206,10 +206,3 @@ struct featureBlock2: ViewModifier {
 var bgRed: Double = 0
 var bgGreen: Double = 0
 var bgBlue: Double = 255
-  
-let backgroundGradient = LinearGradient(
-    colors: [
-        Color(red:1 * bgRed, green: 1*bgGreen, blue: 1*bgBlue),
-        Color.white
-    ],
-    startPoint: .top, endPoint: .bottom)
