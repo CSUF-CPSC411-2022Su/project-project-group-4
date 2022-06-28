@@ -21,7 +21,7 @@ struct weatherView: View {
                     .bold()
                 Text("Highest: 91°F    Lowest: 65°F")
                     .bold()
-                Image("sun")
+                Image("sun2")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 300)
