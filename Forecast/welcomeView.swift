@@ -14,6 +14,10 @@ struct welcomeView: View {
     @State var weather: ResponseBody?
 
     var body: some View {
+        if let location = locationManager.location {
+            var longitude = location.longitude
+            var latitude = location.latitude
+        }
         ZStack {
             backgroundGradient
                 .ignoresSafeArea()

@@ -20,7 +20,7 @@ struct ContentView: View {
 
                 weatherView()
                     .tabItem {
-                        Image(systemName: "location")
+                        Image(systemName: "sun.max.fill")
                         Text("Weather")
                             .bold()
                     }
