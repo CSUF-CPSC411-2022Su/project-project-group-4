@@ -14,24 +14,26 @@ struct welcomeView: View {
     @State var weather: ResponseBody?
 
     var body: some View {
-        VStack {
+        ZStack {
             backgroundGradient
                 .ignoresSafeArea()
 
-            Image("weatherPic")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 300)
-
             VStack {
-                Text("Welcome to ForeCast").bold().font(.title)
-                Text("Please share your current location").padding()
-                LocationButton(.shareCurrentLocation) {
-                    locationManager.requesstLocation()
+                Image("weatherPic")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 300)
+
+                VStack {
+                    Text("Welcome to ForeCast").bold().font(.title)
+                    Text("Please share your current location").padding()
+                    LocationButton(.shareCurrentLocation) {
+                        locationManager.requesstLocation()
+                    }
+                    .foregroundColor(.white)
                 }
-                .foregroundColor(.white)
+                .padding()
             }
-            .padding()
         }
     }
 
