@@ -8,20 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @AppStorage("bgRed") var bgRed: Double = 0
-    @AppStorage("bgGreen") var bgGreen: Double = 0
-    @AppStorage("bgBlue") var bgBlue: Double = 0
-
+    @AppStorage("sizeMultiplier") var sizeMultiplier = 1.0
     var body: some View {
         
-            
             VStack{
                 
                 TabView {
                     
                      
-                    Text("Welcome Page \n Click on More Report tab to see features")
-                        .multilineTextAlignment(.center)
+                        Welcome()
                         .tabItem {
                             Image(systemName: "location")
                             Text("Welcome")
@@ -35,15 +30,15 @@ struct ContentView: View {
                                 .bold()
                         }
                     
-                    Background()
+                    Settings()
                        .tabItem{
                            Image(systemName: "wrench")
-                           Text("Settings")
+                           Text("Size")
                                }
                 }
             
             
-    }
+    }.font(.custom("Arial", size: CGFloat(18 * sizeMultiplier)))
         
     }
 }

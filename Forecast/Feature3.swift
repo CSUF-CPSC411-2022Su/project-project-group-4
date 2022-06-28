@@ -9,6 +9,7 @@ import SwiftUI
 
 struct feature3View: View{
     var x = NecessaryFeatures()
+    @AppStorage("sizeMultiplier") var sizeMultiplier = 1.0
     
     var body: some View {
         ZStack{
@@ -30,7 +31,6 @@ struct feature3View: View{
                 Text("Weather Details for this location")
                         .padding(.leading,1)
                         .font(.custom("Courier New", size: 30))
-//                        .foreground(Color.white)
                         .foregroundColor(.white)
                         .padding()
                     
@@ -167,10 +167,10 @@ struct feature3View: View{
                             }
                 Spacer()
                     }.modifier(featureBlock())
-                
+//                Text("Red:\(bgRed)")
             
         }
-        }
+        }.font(.custom("Arial", size: CGFloat(19 * sizeMultiplier)))
             
         }
     }
@@ -202,3 +202,14 @@ struct featureBlock2: ViewModifier {
             .padding()
     }
 }
+
+var bgRed: Double = 0
+var bgGreen: Double = 0
+var bgBlue: Double = 255
+  
+let backgroundGradient = LinearGradient(
+    colors: [
+        Color(red:1 * bgRed, green: 1*bgGreen, blue: 1*bgBlue),
+        Color.white
+    ],
+    startPoint: .top, endPoint: .bottom)

@@ -18,6 +18,8 @@
 		4E9033E52851219200906C18 /* ForecastUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9033E42851219200906C18 /* ForecastUITestsLaunchTests.swift */; };
 		7A4AEB74286A8AB200500679 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4AEB73286A8AB200500679 /* Background.swift */; };
 		7A4AEB76286AC6D500500679 /* Background2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4AEB75286AC6D500500679 /* Background2.swift */; };
+		7A4AEB78286B6C3300500679 /* FontChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4AEB77286B6C3300500679 /* FontChange.swift */; };
+		7A4AEB7A286B6FA700500679 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4AEB79286B6FA700500679 /* Welcome.swift */; };
 		7A98F1132851282900DC9F62 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A98F1122851282900DC9F62 /* Forecast.swift */; };
 		7A98F14D28614BCF00DC9F62 /* Feature3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A98F14C28614BCE00DC9F62 /* Feature3.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +56,8 @@
 		4E9033E42851219200906C18 /* ForecastUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7A4AEB73286A8AB200500679 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		7A4AEB75286AC6D500500679 /* Background2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background2.swift; sourceTree = "<group>"; };
+		7A4AEB77286B6C3300500679 /* FontChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontChange.swift; sourceTree = "<group>"; };
+		7A4AEB79286B6FA700500679 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		7A98F1122851282900DC9F62 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		7A98F14C28614BCE00DC9F62 /* Feature3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,7 +115,9 @@
 				4E9033C72851219100906C18 /* ForecastApp.swift */,
 				7A98F14C28614BCE00DC9F62 /* Feature3.swift */,
 				7A4AEB73286A8AB200500679 /* Background.swift */,
+				7A4AEB79286B6FA700500679 /* Welcome.swift */,
 				4E9033C92851219100906C18 /* ContentView.swift */,
+				7A4AEB77286B6C3300500679 /* FontChange.swift */,
 				7A4AEB75286AC6D500500679 /* Background2.swift */,
 				4E9033CB2851219200906C18 /* Assets.xcassets */,
 				4E9033CD2851219200906C18 /* Preview Content */,
@@ -281,8 +287,10 @@
 				7A98F14D28614BCF00DC9F62 /* Feature3.swift in Sources */,
 				4E9033CA2851219100906C18 /* ContentView.swift in Sources */,
 				7A98F1132851282900DC9F62 /* Forecast.swift in Sources */,
+				7A4AEB7A286B6FA700500679 /* Welcome.swift in Sources */,
 				4E9033C82851219100906C18 /* ForecastApp.swift in Sources */,
 				7A4AEB74286A8AB200500679 /* Background.swift in Sources */,
+				7A4AEB78286B6C3300500679 /* FontChange.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
