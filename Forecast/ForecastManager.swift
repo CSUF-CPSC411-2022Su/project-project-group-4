@@ -9,6 +9,6 @@ import Foundation
 
 class ForecastManager {
     
-    static let key: String = "3d215e7b92ba77f2d35e0310728067a9"
-    static let baseURL: String = "http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={3d215e7b92ba77f2d35e0310728067a9}"
+    static let key: String = "f8a523b4be1a0a6dc557e6b439f9dba1"
+    static let baseURL: String = "https://api.openweathermap.org/data/2.5/weather?lat=33.87&lon=-117.88&appid=f8a523b4be1a0a6dc557e6b439f9dba1"
 }

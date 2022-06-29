@@ -26,7 +26,7 @@ class City: ObservableObject {
     }
     
     private func getForecast() {
-        guard let url = URL(string: ForecastManager.baseURL + "45.572353,5.915807?units=ca&lang=fr") else {
+        guard let url = URL(string: ForecastManager.baseURL + "") else {
             return
         }
         
