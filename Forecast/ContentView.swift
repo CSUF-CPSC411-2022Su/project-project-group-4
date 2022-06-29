@@ -2,35 +2,45 @@
 //  ContentView.swift
 //  Forecast
 //
-//  Created by Guanlin Wang on 6/8/22.
+//  Created by Sumit Bishnoi on 6/8/22.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("sizeMultiplier") var sizeMultiplier = 1.0
     var body: some View {
-        TabView {
-            Text("Fullerton")
-                .font(.largeTitle)
-                .foregroundColor(Color.blue)
-            HStack(alignment: .center, spacing: 16) {
-                Image(systemName: "sun.max.fill")
-                    .foregroundColor(Color(hue: 0.075, saturation: 0.94, brightness: 0.942))
-                    .font(.largeTitle)
-                Text("85º F")
-                    .font(.largeTitle)
-                    .foregroundColor(Color.orange)
-                
-            }
-            Text("Sunny")
-                .font(.body)
-                .foregroundColor(Color.orange)
-                .multilineTextAlignment(.center)
-            Text("H:88º  L:50º")
-                .foregroundColor(Color.orange)
-    
-        }
+        VStack {
+            TabView {
+                welcomeView()
+                    .tabItem {
+                        Image(systemName: "location")
+                        Text("Welcome")
+                            .bold()
+                    }
 
+                weatherView()
+                    .tabItem {
+                        Image(systemName: "sun.max.fill")
+                        Text("Weather")
+                            .bold()
+                    }
+                    
+                feature3View()
+                    .tabItem {
+                        Image(systemName: "wind")
+                        Text("More Reports")
+                            .bold()
+                    }
+                    
+                Settings()
+                    .tabItem {
+                        Image(systemName: "wrench")
+                        Text("Size")
+                    }
+            }
+            
+        }.font(.custom("Arial", size: CGFloat(18 * sizeMultiplier)))
     }
 }
         
